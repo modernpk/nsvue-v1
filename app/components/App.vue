@@ -1,26 +1,22 @@
 <template>
     <Page>
         <ActionBar title="Welcome to NativeScript-Vue!"/>
-        <GridLayout columns="*" rows="*">
 
-
-            <Label class="message" :text="msg" col="0" row="0"/>
-        </GridLayout>
 
         <StackLayout>
-            <Button text="To Details directly" @tap="$navigateTo(detailPage)" />
+            <Button text="List View" @tap="$navigateTo(ListPage)" />
         </StackLayout>
 
     </Page>
 </template>
 
 <script >
-    import DetailPage from './DetailPage'
+  import ListPage from './ListPage'
   export default {
     data() {
       return {
           msg: 'Hello World!',
-          detailPage: DetailPage
+          ListPage: ListPage
       }
     }
   }

@@ -11,7 +11,7 @@
     export default {
         data() {
             return {
-                msg: 'Hello World!',
+                title: 'Hello World!',
             }
         }
     }
